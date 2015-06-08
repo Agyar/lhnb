@@ -665,7 +665,11 @@ static int draw_item (int line_start, int cursor_pos, Node *node,
 	int lines_used = 1;
 
 	int col_start = 0;
-	int col_end = COLS;
+	int col_end = 80;
+  (COLS) = 80;
+
+  /*fprintf(stdout, "HEY HEY HEY\n");*/
+  /*fprintf(stdout, "%d\n", COLS);*/
 
 	col_start = 0;
 	/* draw columns before col_data */
